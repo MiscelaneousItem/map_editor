@@ -1,0 +1,74 @@
+
+project.c,440
+const int max_filename_length 5,59
+char eof 6,95
+bool RectangleClicked(11,155
+void InputToChar(15,297
+void DrawTextComposite(32,760
+void DrawTextComposite3(37,1024
+bool ButtonCompositeClicked(43,1456
+void GuiUpdateTypeEdit(47,1699
+void GuiRenderTypeEdit(62,2242
+void GuiUpdateTypeSelect(89,3367
+#define AGRAY 114,4792
+#define ADARKGRAY 115,4842
+void GuiRenderTypeSelect(117,4898
+void hobbes_logger(132,5776
+int main(140,6043
+
+tileset.h,989
+typedef struct TerrainType 5,66
+  Texture tex;6,95
+  char* tex_path;7,110
+  int id;8,128
+} TerrainType;9,138
+typedef struct TypeSet 11,154
+  Vector types;12,179
+  char* name;13,195
+} TypeSet;14,209
+TypeSet NewTypeSet(16,221
+void NewTypeToTileSet(24,429
+void ExportTypeSet(31,712
+TypeSet LoadTypeSet(39,1038
+typedef struct Tile 93,2279
+  TerrainType** type;94,2301
+  int2 cl;95,2323
+  Vector2 pos;96,2334
+  bool border;97,2349
+} Tile;98,2364
+const int n_tile_elements 100,2373
+typedef struct TileSet 102,2405
+  Vector tiles;103,2430
+  int2 size;104,2446
+  TypeSet* typeset;105,2459
+  Texture* chunks;106,2479
+} TileSet;107,2498
+const int tilesize 109,2510
+TileSet NewTileSet(111,2536
+TileSet NewDefaultTileSet(132,3265
+TileSet MergeTileSet(143,3575
+void ExportTileSet(159,4288
+void ExportMap(170,4627
+TileSet LoadTileSet(182,4973
+const int2 chunk_size 257,6943
+Texture* GenerateChunks(259,6980
+void RenderTileSet(282,8229
+void RenderTileSetRaw(286,8415
+
+vector.h,397
+typedef struct int2 7,99
+  int a,8,121
+  int a, b;8,121
+} int2;9,133
+typedef struct Vector 11,142
+  int length;12,166
+  int capacity;13,180
+  int size_of_element;14,196
+  char* data;15,219
+} Vector;16,233
+const Vector NewVector(18,244
+void* AccessVectorElement(25,441
+int RemoveFromVector(29,565
+void SetVectorValue(45,1009
+int AddToVector(53,1308
+void RemoveFromVectorInt(60,1472

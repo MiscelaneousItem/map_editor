@@ -1,0 +1,3 @@
+editor: project.c
+	cc -Wall -o dev project.c -lraylib -ldl -lX11 -lGL -lpthread -lrt -lm
+	etags *.[ch]

@@ -1,0 +1,12 @@
+more stuff added after rm * scare
+# Please enter the patch name in the first line, and
+# optionally, a long description in the following lines.
+#
+# Lines starting with '#' will be ignored.
+#
+#
+# Summary of selected changes:
+#
+# A ./makefile
+# M ./tileset.h -3 +3
+# A ./vector.h
